@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .emphasize-text {
+    @apply font-medium text-teal-600 dark:text-teal-400;
+  }
+}
+
+/* You can add global styles to this file, and also import other style files */
+.token.class-name, .token.function, .token.selector, .token.selector .class, .token.selector.class, .token.tag {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182/var(--tw-text-opacity))
+}
+
+.token.attr-name, .token.important, .token.keyword, .token.module, .token.pseudo-class, .token.rule {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225/var(--tw-text-opacity))
+}
+
+.token.attr-value, .token.class, .token.string {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252/var(--tw-text-opacity))
+}
+
+.token.attr-equals, .token.punctuation {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139/var(--tw-text-opacity))
+}
+
+.token.attr-value * {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252/var(--tw-text-opacity))
+}
+
+.token.attr-value .attr-equals, .token.attr-value .attr-equals + .punctuation, .token.attr-value > .punctuation:last-child {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139/var(--tw-text-opacity))
+}
+
+.token.property {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252/var(--tw-text-opacity))
+}
+
+.token.unit {
+  --tw-text-opacity: 1;
+  color: rgb(153 246 228/var(--tw-text-opacity))
+}
+
+/*.highlight-white\/5 {
+  box-shadow: inset 0 1px 0 0 #ffffff0d
+}
+.highlight-white\/20 {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2)
+}*/
+
+// AG CHARTS
+ag-charts {
+  display: block;
+}
+
+// ADAPT ANGULAR MATERIAL TO WORK WITH TAILWIND
+.mat-mdc-notch-piece {
+  border-right: none;
+}
+input:focus, textarea:focus {
+  box-shadow: none !important;
+}
+.mdc-text-field--outlined {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.mat-mdc-form-field {
+  @apply w-full;
+}
+.mat-mdc-option {
+  min-height: 36px !important;
+}
+.mat-mdc-select-panel {
+  padding: 0 !important;
+}
+.mdc-checkbox__background {
+  border-width: 1px !important;
+  border-radius: 0.25rem !important;
+}
+.mat-mdc-checkbox label {
+  @apply font-medium text-gray-900;
+}
+.mat-mdc-option {
+  padding: 0 12px !important;
+}
+.mat-mdc-form-field-hint-wrapper, .mat-mdc-form-field-error-wrapper {
+  padding: 0 !important;
+}
+.mat-mdc-radio-button .mdc-radio__outer-circle {
+  border-width: 1px !important;
+}
+.mdc-form-field.mat-internal-form-field:has(.mdc-checkbox, .mdc-radio) {
+  @apply items-start;
+  line-height: 28px;
+}
+.mdc-button {
+  @apply px-3 py-2;
+}
+.mdc-text-field {
+  @apply rounded-md !important;
+}
+
+// scroll bar
+:root {
+  --color-background: theme(colors.gray.50);
+  --color-gray-300: theme(colors.slate.400);
+  --color-gray-500: theme(colors.slate.500);
+  &.dark {
+    --color-background: theme(colors.slate.900);
+    --color-gray-300: theme(colors.slate.600);
+    --color-gray-500: theme(colors.slate.500);
+  }
+}
+
+@media (min-device-width: 600px) {
+  ::-webkit-scrollbar {
+    width:9px;
+    height: 11px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--color-gray-300);
+    border: 2px solid var(--color-background)
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gray-500)
+  }
+}

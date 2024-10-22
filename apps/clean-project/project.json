@@ -1,0 +1,101 @@
+{
+  "name": "clean-project",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/clean-project/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "statsJson": true,
+        "outputPath": "dist/apps/clean-project",
+        "index": "apps/clean-project/src/index.html",
+        "browser": "apps/clean-project/src/main.ts",
+        "tsConfig": "apps/clean-project/tsconfig.app.json",
+        "inlineStyleLanguage": "less",
+        "optimization": {
+          "scripts": true,
+          "styles": true,
+          "fonts": false
+        },
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/clean-project/public"
+          }
+        ],
+        "styles": [
+          "apps/clean-project/src/custom-theme.scss",
+          "apps/clean-project/src/styles.less"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "clean-project:build:production"
+        },
+        "development": {
+          "buildTarget": "clean-project:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "clean-project:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "apps/clean-project/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "clean-project:build",
+        "staticFilePath": "dist/apps/clean-project/browser",
+        "spa": true
+      }
+    }
+  }
+}

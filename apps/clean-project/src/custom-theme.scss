@@ -1,0 +1,85 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@use 'colors' as colors;
+@use '@angular/cdk' as cdk;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+$font-color-light: theme('colors.gray.950');
+$font-color-dark: theme('colors.gray.50');
+
+
+// Define the theme object.
+$light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: colors.$colors,
+  ),
+  typography: (
+    plain-family: 'ui-sans-serif system-ui sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji"',
+  ),
+  density: (
+    scale: -5,
+  )
+));
+$dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: colors.$colors,
+  ),
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+:root {
+  @include mat.all-component-themes($light-theme);
+  --mdc-outlined-text-field-outline-color: theme('colors.gray.300');
+  --mat-form-field-container-text-size: 14px;
+  // --mdc-outlined-text-field-focus-outline-color: theme('colors.teal.600');
+  --mdc-outlined-text-field-caret-color: theme('colors.teal.600');
+  --mat-select-panel-background-color: theme('colors.gray.50');
+  --mat-option-focus-state-layer-color: theme('colors.gray.100');
+  --mat-option-hover-state-layer-color: theme('colors.gray.100');
+  --mat-minimal-pseudo-checkbox-selected-checkmark-color: theme('colors.gray.100');
+  //--mat-option-selected-state-label-text-color: theme('colors.gray.100');
+  --mdc-checkbox-unselected-icon-color: theme('colors.gray.300');
+  --mdc-checkbox-unselected-focus-icon-color: theme('colors.gray.300');
+  --mdc-outlined-text-field-hover-outline-color: theme('colors.gray.500');
+  --mat-select-trigger-text-size: 14px;
+  --mat-option-label-text-size: 14px;
+  --mdc-radio-unselected-icon-color: theme('colors.gray.300');
+  --mdc-radio-selected-hover-icon-color: theme('colors.gray.500');
+  --mdc-filled-button-container-shape: theme('borderRadius.md');
+  --mdc-outlined-button-container-shape: theme('borderRadius.md');
+  --mdc-text-button-container-shape: theme('borderRadius.md');
+  --mat-app-corner-full: theme('borderRadius.md');
+  --mat-filled-button-horizontal-padding: theme('padding.3');
+  --mdc-filled-button-container-height: 36px;
+  --mdc-outlined-button-container-height: 36px;
+  --mdc-text-button-container-height: 36px;
+}
+
+:root.dark {
+  @include mat.all-component-colors($dark-theme);
+  --mdc-outlined-text-field-input-text-color: $font-color-dark;
+  --mat-option-selected-state-label-text-color: $font-color-dark;
+  --mat-option-label-text-color: $font-color-dark;
+  --mat-select-enabled-trigger-text-color: $font-color-dark;
+  --mat-select-panel-background-color: theme('colors.slate.700');
+  --mat-option-focus-state-layer-color: theme('colors.gray.800');
+  --mat-option-hover-state-layer-color: theme('colors.gray.800');
+  --mdc-filled-button-label-text-color: theme('colors.white');
+  --mdc-filled-button-container-color: theme('colors.teal.800');
+}
+
+.mat-mdc-text-field-wrapper:has(.cdk-text-field-autofilled) {
+  // background-color: #e8f0fe !important;
+  background-color: #e8f0fe !important;
+}

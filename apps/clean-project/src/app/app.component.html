@@ -1,0 +1,135 @@
+<header class="relative w-full">
+  <div class="px-4 sm:px-6 lg:px-8">
+    <div class="bg-[url('/bg-image--light.png')] dark:bg-[url('/bg-image--dark.png')] background-image absolute bottom-10 bg-bottom bg-no-repeat inset-0 dark:bg-[rgb(16,13,40)]">
+      <div
+        class="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
+        style="mask-image:linear-gradient(to bottom, transparent, black);-webkit-mask-image:linear-gradient(to bottom, transparent, black)"></div>
+    </div>
+    <div class="relative flex pt-8 justify-between font-semibold text-sm text-slate-500 dark:text-slate-200">
+      <div class="flex">
+        <span class="text-md font-semibold text-2xl" style="line-height: 19px">ris</span>
+        <svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.46 167.19" class="dark:text-white w-5 h-7 fill-slate-500 dark:fill-slate-200">
+          <g id="Ebene_1-2">
+            <path d="M9.7,19.4C4.35,19.4,0,15.05,0,9.7S4.35,0,9.7,0s9.7,4.35,9.7,9.7-4.35,9.7-9.7,9.7Z" style="stroke-width:0;"/>
+            <path d="M50.2,115.45c-14.86,0-27.53-10.54-30.12-25.06-.32-1.78-.48-3.56-.48-5.32v-34.91h0c0-8.12-6.58-14.7-14.7-14.7H0v50c.02,1.4.09,2.8.21,4.18,1.13,12.29,6.84,23.69,16.06,32.1,9.29,8.46,21.34,13.12,33.92,13.12,7.16,0,14.06-1.47,20.53-4.36v-22.91c-5.55,5.01-12.82,7.86-20.53,7.86Z" style="stroke-width:0;"/>
+            <path d="M98.28,80.89c-1.04-12.38-6.71-23.87-15.96-32.36-9.31-8.54-21.4-13.25-34.06-13.25-7.87,0-15.54,1.84-22.5,5.32,1.34,2.91,2.1,6.15,2.1,9.57v12.27c5.54-4.94,12.75-7.74,20.4-7.74,15.1,0,27.79,10.73,30.2,25.51.26,1.62.4,3.26.4,4.87v59.87h0v7.55c0,8.12,6.58,14.7,14.7,14.7h4.9v-82.12c0-1.36-.06-2.77-.18-4.18Z" style="stroke-width:0;"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hidden sm:block md:flex items-center">
+        <nav>
+          <ul class="flex gap-x-8">
+            <li><a class="hover:text-teal-400" href="">Über uns</a></li>
+            <li><a class="hover:text-teal-400" href="">Ribeca</a></li>
+            <li><a class="hover:text-teal-400" href="">Services</a></li>
+            <li><a class="hover:text-teal-400" href="">Karriere</a></li>
+            <li><a class="hover:text-teal-400" href="">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="flex border-l pl-6 ml-6">
+          <button (click)="toggleTheme()" type="button" id="headlessui-listbox-button-:R5beilb6:" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""
+                  aria-labelledby="headlessui-label-:R3beilb6: headlessui-listbox-button-:R5beilb6:"><span class="dark:hidden">
+            <mat-icon fontIcon="light_mode"/>
+<!--            <svg
+            viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path
+            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-slate-400 dark:stroke-slate-500"></path><path
+            d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+            class="stroke-slate-400 dark:stroke-slate-500"></path></svg></span>-->
+          </span>
+            <span class="hidden dark:inline">
+            <mat-icon fontIcon="dark_mode"/>
+          <!--    <svg viewBox="0 0 24 24" fill="none"
+                                                                                                                     class="w-6 h-6"><path
+            fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+            class="fill-transparent"></path><path
+            d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+            class="fill-slate-400 dark:fill-slate-500"></path><path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                                                                    class="fill-slate-400 dark:fill-slate-500"></path></svg></span>-->
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
+      <h1 class="text-center font-extrabold text-2xl md:text-6xl tracking-tight dark:text-white text-slate-900">Risikomanagementprozesse nachhaltig verbessern.</h1>
+      <p class="dark:text-slate-400 text-slate-800 text-lg text-center mx-auto mt-6 max-w-3xl">Ribeca ist unser maßgeschneidertes Risikomanagement-Tool, das speziell für
+        die <span class="emphasize-text">Bedürfnisse von Banken</span> entwickelt wurde.
+        Es integriert sich nahtlos <span class="emphasize-text">in bestehende Controlling- und
+          Datenverarbeitungssysteme</span> und bietet eine vollständige Lösung für <span class="emphasize-text">alle
+          Aspekte des Risikomanagements</span>.
+      </p>
+      <div class="mt-10 flex justify-center font-semibold space-x-6">
+        <a class="bg-teal-800 hover:bg-teal-700 px-6 h-12 highlight-white/20 text-white rounded-lg w-auto flex items-center justify-center" href="lele">Jetzt kontaktieren</a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-16 md:mt-32 grid px-8 grid-cols-6 md:grid-cols-12 gap-8">
+    <figure class="flex flex-col lg:flex-row items-center relative col-span-6 bg-white dark:bg-slate-800 rounded-xl my-auto shadow-lg dark:highlight-white/20 lg:-ml-20 z-10 overflow-visible">
+      <img style="transform: scale(-1, 1);" class="object-cover w-48 h-48 lg:-ml-10 mt-6 lg:mt-0 shadow-lg border ring-white shrink-0 rounded-full" ngSrc="man-cartoon.webp" width="192" height="192"  alt="Max Glasner (CEO)"/>
+      <div class="p-6 space-y-4">
+        <blockquote class="text-lg">
+          "Unsere <span class="emphasize-text">Vision</span> ist es, die Bankenbranche durch den Einsatz fortschrittlicher Technologien und intelligenter Lösungen <span class="emphasize-text">grundlegend zu verändern</span>.
+          Wir streben danach, die Effizienz und Präzision von Risikomanagementlösungen zu optimieren und gleichzeitig <span class="emphasize-text">erhebliche Kosten- und Zeitvorteile</span> zu schaffen."
+        </blockquote>
+        <figcaption class="font-medium">
+          <div class="text-sky-500 dark:text-sky-400">
+            Max Glasner
+          </div>
+          <div class="text-slate-700 dark:text-slate-500">
+            CEO, risiq GmbH
+          </div>
+        </figcaption>
+      </div>
+    </figure>
+    <div
+      class="relative col-span-6 overflow-hidden shadow-xl flex bg-white dark:bg-slate-800 h-[31.625rem] sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem] dark:bg-slate-900/70 dark:backdrop-blur dark:ring-1 dark:ring-inset dark:ring-white/10 max-h-[none]">
+      <div class="relative w-full flex flex-col">
+        <clean-ag-chart class="h-full"/>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="py-16 md:py-32 bg-gradient-to-b from-transparent to-teal-50 dark:to-slate-950">
+  <div class="container max-w-7xl mx-auto px-3">
+    <clean-services/>
+  </div>
+</div>
+
+<div class="pb-16 md:pb-32 bg-gradient-to-t from-transparent to-teal-50 dark:to-slate-950">
+  <div class="grid grid-cols-6 gap-6 container max-w-7xl mx-auto px-3">
+    <div class="col-span-full md:col-span-3 self-center">
+      <h2 class="text-center text-5xl text-slate-950 dark:text-white mb-8 tracking-tight font-extrabold">Kontakt.</h2>
+      <div class="rounded-lg shadow-lg border border-slate-200 dark:border-none dark:highlight-white/5 bg-white dark:bg-slate-800 p-6">
+        <p class="leading-6 text-slate-600 dark:text-slate-400">
+          Sie haben Fragen oder interessieren sich für unsere Leistungen? <br>
+          Rufen Sie uns an oder nutzen Sie direkt unser Kontaktformular. <br>
+          <span>Wir melden uns bei Ihnen.</span>
+        </p>
+        <div>
+          <div class="w-full md:flex content-between mt-6 space-y-3">
+            <div class="flex-grow text-slate-600 dark:text-slate-300">
+              <div>Risiq GmbH<br>
+              Otto-Beck-Straße 14,<br>
+              68165 Mannheim</div>
+              <a href="" class="mt-6 flex items-center gap-2 hover:text-sky-500"><mat-icon class="" fontIcon="call" [inline]="true"/> +49 152 539 979 81</a>
+              <a href="" class="flex items-center gap-2 hover:text-sky-500"><mat-icon class="" fontIcon="email" [inline]="true"/>info&commat;risiq.de</a>
+            </div>
+            <div>
+              <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=400&amp;hl=en&amp;q=Heidelberg&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-span-full md:col-span-3">
+      <app-angular-material-test/>
+    </div>
+  </div>
+</div>
+
+<div>
+  <clean-footer/>
+</div>
