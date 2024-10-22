@@ -7231,7 +7231,7 @@
       "format": "esm"
     },
     "apps/clean-project/src/app/app.component.ts": {
-      "bytes": 13687,
+      "bytes": 13685,
       "imports": [
         {
           "path": "node_modules/@angular/common/fesm2022/common.mjs",
@@ -7315,8 +7315,16 @@
       "bytes": 95532,
       "imports": []
     },
+    "angular:css-resource:bg-image--light.png": {
+      "bytes": 683804,
+      "imports": []
+    },
+    "angular:css-resource:bg-image--dark.png": {
+      "bytes": 469239,
+      "imports": []
+    },
     "apps/clean-project/src/styles.less": {
-      "bytes": 38258,
+      "bytes": 38252,
       "imports": [
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e",
@@ -7339,9 +7347,9 @@
           "external": true
         },
         {
-          "path": "/bg-image--light.png",
+          "path": "angular:css-resource:bg-image--light.png",
           "kind": "url-token",
-          "external": true
+          "original": "bg-image--light.png"
         },
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e",
@@ -7349,9 +7357,9 @@
           "external": true
         },
         {
-          "path": "/bg-image--dark.png",
+          "path": "angular:css-resource:bg-image--dark.png",
           "kind": "url-token",
-          "external": true
+          "original": "bg-image--dark.png"
         },
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e",
@@ -7377,7 +7385,7 @@
     }
   },
   "outputs": {
-    "main-ZFQG7Y7F.js": {
+    "main-AC25JVUM.js": {
       "imports": [
         {
           "path": "chunk-XNFVPNIF.js",
@@ -7473,13 +7481,13 @@
           "bytesInOutput": 4789
         },
         "apps/clean-project/src/app/app.component.ts": {
-          "bytesInOutput": 8620
+          "bytesInOutput": 8618
         },
         "apps/clean-project/src/main.ts": {
           "bytesInOutput": 37
         }
       },
-      "bytes": 1028465
+      "bytes": 1028463
     },
     "chunk-GLHUXUZS.js": {
       "imports": [
@@ -8003,7 +8011,27 @@
       "bytes": 92,
       "ng-component": true
     },
-    "styles-XZLDKSEI.css": {
+    "media/bg-image--light-FWR2S5GU.png": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "angular:css-resource:bg-image--light.png": {
+          "bytesInOutput": 683804
+        }
+      },
+      "bytes": 683804
+    },
+    "media/bg-image--dark-GOPCV4YV.png": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "angular:css-resource:bg-image--dark.png": {
+          "bytesInOutput": 469239
+        }
+      },
+      "bytes": 469239
+    },
+    "styles-DFLR5BBR.css": {
       "imports": [
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e",
@@ -8026,9 +8054,8 @@
           "external": true
         },
         {
-          "path": "/bg-image--light.png",
-          "kind": "url-token",
-          "external": true
+          "path": "media/bg-image--light-FWR2S5GU.png",
+          "kind": "url-token"
         },
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e",
@@ -8036,9 +8063,8 @@
           "external": true
         },
         {
-          "path": "/bg-image--dark.png",
-          "kind": "url-token",
-          "external": true
+          "path": "media/bg-image--dark-GOPCV4YV.png",
+          "kind": "url-token"
         },
         {
           "path": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e",
@@ -8052,13 +8078,13 @@
           "bytesInOutput": 89874
         },
         "apps/clean-project/src/styles.less": {
-          "bytesInOutput": 28651
+          "bytesInOutput": 28683
         },
         "angular:styles/global:styles": {
           "bytesInOutput": 0
         }
       },
-      "bytes": 118526
+      "bytes": 118558
     }
   }
 }
