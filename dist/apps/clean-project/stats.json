@@ -7174,7 +7174,7 @@
       "format": "esm"
     },
     "apps/clean-project/src/app/footer/footer.component.ts": {
-      "bytes": 6672,
+      "bytes": 6679,
       "imports": [
         {
           "path": "node_modules/@angular/core/fesm2022/core.mjs",
@@ -7231,7 +7231,7 @@
       "format": "esm"
     },
     "apps/clean-project/src/app/app.component.ts": {
-      "bytes": 13685,
+      "bytes": 13701,
       "imports": [
         {
           "path": "node_modules/@angular/common/fesm2022/common.mjs",
@@ -7385,7 +7385,7 @@
     }
   },
   "outputs": {
-    "main-AC25JVUM.js": {
+    "main-HH7SJV6F.js": {
       "imports": [
         {
           "path": "chunk-XNFVPNIF.js",
@@ -7475,19 +7475,19 @@
           "bytesInOutput": 2227
         },
         "apps/clean-project/src/app/footer/footer.component.ts": {
-          "bytesInOutput": 4027
+          "bytesInOutput": 4034
         },
         "apps/clean-project/src/app/services/services.component.ts": {
           "bytesInOutput": 4789
         },
         "apps/clean-project/src/app/app.component.ts": {
-          "bytesInOutput": 8618
+          "bytesInOutput": 8630
         },
         "apps/clean-project/src/main.ts": {
           "bytesInOutput": 37
         }
       },
-      "bytes": 1028463
+      "bytes": 1028482
     },
     "chunk-GLHUXUZS.js": {
       "imports": [
