@@ -57,5 +57,6 @@
       "prefix": "clean"
     }
   },
-  "defaultProject": "clean-project"
+  "defaultProject": "clean-project",
+  "useLegacyCache": true
 }
